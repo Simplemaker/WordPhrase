@@ -1,0 +1,20 @@
+.example{
+  font-style: italic;
+}
+
+button{
+  font-size: 12pt;
+  margin: 4px;
+}
+
+#pvalid{
+  font-family: 'Courier New', Courier, monospace;
+  font-style: bold;
+  color: green;
+}
+
+#pinvalid{
+  font-family: 'Courier New', Courier, monospace;
+  font-style: normal;
+  color: red;
+}

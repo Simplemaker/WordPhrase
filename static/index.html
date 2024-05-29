@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>WordPhrase</title>
+	<link href="header.css" rel="stylesheet" type="text/css" />
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div class="header">
+		<h1><a class="homelink" href="../">Abstract Mathematics and Friends</a></h1>
+		<h2>WordPhrase Generator</h2>
+	</div>
+  <button onClick="toggleDiv('intro');">Toggle Intro</button>
+  <div id="intro">
+  <p>A wordphrase is a phrase which contains a hidden word. for example:</p>
+  <p class="example">setup ramps radians well<p>
+    <p>This is a nonsensical phrase! However, it is a valid wordphrase. Try highlighting every third character, starting with the first:</p>
+  <p class="example"><b>s</b>et<b>u</b>p <b>r</b>am<b>p</b>s <b>r</b>ad<b>i</b>an<b>s</b> w<b>e</b>ll</p>
+    <p>This is a surprise! To make your own wordphrase, continue to the generator below!</p>
+    </div>
+  <div id="generatorDiv">
+    <div id="targetSelection">
+      <p>Count (default to 3):<input type="text" id="count" value=3></p>
+      <p>Enter your target word below</p>
+      <input type="text" id="target"><button id="targetbutton" onclick="acceptTarget()">Accept</button>
+      </div>
+
+    <div id="phraseGen" style="display:none;">
+      <button onclick="newTarget();">New Target</button><button onclick="undoWord()">Undo Word</button>
+      <p>Progress: <span id="pvalid"></span><span id="pinvalid"></span></p>
+       <p>Words Chosen: <span id="wordCount">0</span></p>
+       <p>Current Phrase: <span id="currentphrase"></span></p>
+    <div id="buttonbay">
+
+    </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+	<script src="script.js"></script>
+  <script src="wordloader.js"></script>
+  <script src="wordphrase.js"></script>
+</body>
+
+</html>
